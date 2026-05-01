@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Github, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
     const fadeUpVariants = {
