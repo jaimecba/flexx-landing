@@ -87,7 +87,7 @@ const Benefits: React.FC = () => {
                     <motion.h2
                         variants={itemVariants}
                         className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-700 to-blue-800 bg-clip-text text-transparent mb-6"
-                    >''
+                    >
                         Recursos
                     </motion.h2>
 
