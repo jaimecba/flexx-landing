@@ -29,12 +29,6 @@ const Footer = () => {
         { href: '/contato', label: 'Contato' }
     ];
 
-    const socialLinks = [
-        { href: 'https://github.com/suaempresa', icon: Github, label: 'Github' },
-        { href: 'https://twitter.com/suaempresa', icon: Twitter, label: 'Twitter' },
-        { href: 'https://instagram.com/suaempresa', icon: Instagram, label: 'Instagram' },
-        { href: 'https://linkedin.com/company/suaempresa', icon: Linkedin, label: 'LinkedIn' }
-    ];
 
     return (
         <footer className="w-full bg-neutral-900 border-t border-neutral-800 text-neutral-300 py-16 px-6 md:px-12 lg:px-24">
