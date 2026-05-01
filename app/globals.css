@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* ADICIONE AS CORES DA MARCA AQUI */
+  --brand-green: #00B37E;
+  --brand-greenDark: #00885F;
+}
+
+:root {
+  --brand-green: #C7FF00;
+}
+
+@theme inline {
+  --color-brand-green: var(--brand-green);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* MAPEAR AS CORES DA MARCA PARA UTILS TAILWIND */
+  --color-brand-green: var(--brand-green);
+  --color-brand-greenDark: var(--brand-greenDark);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* CORES DA LOGO */
+  --brand-green: #A6FF00;
+  --brand-green-dark: #7ED321;
+}
+
+@theme inline {
+  --color-brand-green: var(--brand-green);
+  --color-brand-green-dark: var(--brand-green-dark);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollbar-hide::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.scrollbar-hide:hover::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 999px;
+}
