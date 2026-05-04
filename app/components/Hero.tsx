@@ -23,11 +23,11 @@ const Hero2: React.FC = () => {
 
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-800 leading-tight mb-6">
                             Controle de ponto antifraude com reconhecimento facial
-                            Reduza erros e evite passivos trabalhistas automaticamente
+
                         </h1>
 
                         <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-lg">
-                            Elimine retrabalho na folha, evite inconsistências e tenha total controle da jornada com suporte especialista e sistema validado.
+                            Reduza erros e evite passivos trabalhistas
                         </p>
 
                         {/* CTAs */}
@@ -35,8 +35,7 @@ const Hero2: React.FC = () => {
 
                             {/* BOTÃO PRINCIPAL */}
                             <a
-                                href="https://www.secullum.com.br/arearestrita/novo-cliente?t=3&r=4057&e=flexx@flexxtecnologia.com.br&d=15"
-                                target="_blank"
+                                href="https://wa.me/556521294584?text=TESTE"
                                 rel="noopener noreferrer"
                                 className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold py-5 px-8 rounded-2xl text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 text-center"
                             >
@@ -45,8 +44,7 @@ const Hero2: React.FC = () => {
 
                             {/* BOTÃO SECUNDÁRIO */}
                             <a
-                                href="https://www.secullum.com.br/arearestrita/novo-cliente?t=3&r=4057&e=flexx@flexxtecnologia.com.br&d=15"
-                                target="_blank"
+                                href="https://wa.me/556521294584?text=TESTE"
                                 rel="noopener noreferrer"
                                 className="w-full sm:w-auto border-2 border-gray-200 text-gray-900 font-semibold py-5 px-8 rounded-2xl text-lg hover:bg-gray-50 transition text-center"
                             >
