@@ -5,7 +5,23 @@ export async function POST(req: Request) {
 
     const text = body?.text?.toUpperCase() || "";
 
-    // 🔥 RESPOSTA BASE
+    // 🔥 FLUXO TESTE (lead quente)
+    if (text.includes("TESTE")) {
+        return NextResponse.json({
+            type: "QUESTION",
+            text: "Perfeito! Vamos começar 🚀\n\nQuantos funcionários sua empresa possui?"
+        });
+    }
+
+    // 🔥 FLUXO DEMO (lead médio)
+    if (text.includes("DEMO")) {
+        return NextResponse.json({
+            type: "INFORMATION",
+            text: "Aqui vai uma visão rápida do sistema 👇\n\n✔ Controle automático\n✔ Antifraude com reconhecimento facial\n✔ Integração com eSocial\n\nQuer testar agora ou falar com especialista?"
+        });
+    }
+
+    // 🔥 PADRÃO (menu)
     return NextResponse.json({
         type: "MENU",
         text: "Perfeito! Vamos te ajudar 👇\n\nEscolha uma opção:",
