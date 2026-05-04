@@ -1,11 +1,21 @@
 import { NextResponse } from "next/server";
 
+
 export async function POST(req: Request) {
     try {
+        const auth = req.headers.get("mz-authorization");
+
+        // opcional (segurança)
+        if (auth !== "flexx123") {
+            return NextResponse.json({
+                type: "INFORMATION",
+                text: "Não autorizado"
+            });
+        }
+
         const body = await req.json();
         const text = String(body?.text || "");
 
-        // 🔥 quando usuário digita 6
         if (text === "6") {
             return NextResponse.json({
                 type: "QUESTION",
@@ -13,16 +23,15 @@ export async function POST(req: Request) {
             });
         }
 
-        // 🔥 fallback
         return NextResponse.json({
             type: "INFORMATION",
-            text: "Escolha uma opção do menu."
+            text: "Escolha uma opção válida."
         });
 
     } catch (error) {
         return NextResponse.json({
             type: "INFORMATION",
-            text: "Erro na integração. Tente novamente."
+            text: "Erro na integração."
         });
     }
 }
