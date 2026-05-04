@@ -22,7 +22,8 @@ const Hero2: React.FC = () => {
                         </p>
 
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-800 leading-tight mb-6">
-                            Controle de ponto sem erros com acompanhamento especializado
+                            Controle de ponto antifraude com reconhecimento facial
+                            Reduza erros e evite passivos trabalhistas automaticamente
                         </h1>
 
                         <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-lg">
