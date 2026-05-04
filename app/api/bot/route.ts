@@ -1,7 +1,10 @@
 import { NextResponse } from "next/server";
 
-export async function POST() {
+export async function POST(req: Request) {
+    const body = await req.json();
+
     return NextResponse.json({
-        text: "🔥 INTEGRAÇÃO FUNCIONANDO"
+        type: "INFORMATION",
+        text: `Recebi: ${body.text} 🚀 Integração funcionando`
     });
 }

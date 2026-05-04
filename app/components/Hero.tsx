@@ -35,7 +35,7 @@ const Hero2: React.FC = () => {
 
                             {/* BOTÃO PRINCIPAL */}
                             <a
-                                href="https://wa.me/556521294584?text=TESTE"
+                                href="https://wa.me/556521294584?text=6"
                                 rel="noopener noreferrer"
                                 className="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold py-5 px-8 rounded-2xl text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 text-center"
                             >
@@ -44,7 +44,7 @@ const Hero2: React.FC = () => {
 
                             {/* BOTÃO SECUNDÁRIO */}
                             <a
-                                href="https://wa.me/556521294584?text=TESTE"
+                                href="https://wa.me/556521294584?text=6"
                                 rel="noopener noreferrer"
                                 className="w-full sm:w-auto border-2 border-gray-200 text-gray-900 font-semibold py-5 px-8 rounded-2xl text-lg hover:bg-gray-50 transition text-center"
                             >
