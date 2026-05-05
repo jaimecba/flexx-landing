@@ -1,9 +1,19 @@
+'use client';
+
+import Header from './site/components/Header';
+import Hero from './site/components/Hero';
+import Services from './site/components/Services';
+import Diferenciais from './site/components/Diferenciais';
+import Footer from './site/components/Footer';
+
 export default function Home() {
     return (
-        <div className="flex items-center justify-center min-h-screen bg-white">
-            <h1 className="text-4xl font-bold text-gray-900">
-                Bem-vindo à Flexx Tecnologia
-            </h1>
-        </div>
+        <>
+            <Header />
+            <Hero />
+            <Services />
+            <Diferenciais />
+            <Footer />
+        </>
     );
 }
