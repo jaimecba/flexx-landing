@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -14,15 +15,25 @@ const Header: React.FC = () => {
         { href: '/login', label: 'Área do Cliente' },
     ];
 
-    const cta = { href: '/contato', label: 'Fale Conosco' };
+    const cta = { href: 'https://pontoweb.secullum.com.br/login', label: 'Acessar Ponto Web' };
 
     return (
         <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200/50">
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16 lg:h-20">
-                    {/* Logo */}
-                    <Link href="/" className="flex-shrink-0 flex items-center text-xl lg:text-2xl font-bold text-gray-900 hover:text-gray-800 transition-colors">
-                        Flexx
+                    {/* Logo com Símbolo FX */}
+                    <Link href="/" className="flex-shrink-0 flex items-center text-xl lg:text-2xl font-bold text-gray-900 hover:text-gray-800 transition-colors gap-2">
+                        <Image
+                            src="/images/logos/flexx-horizontal_sf.png"
+                            alt="Flexx Logo"
+                            height={80}
+                            width={210}
+                            className="w-auto"
+                            priority
+                        />
+                        <span className="text-sm lg:text-base font-semibold text-[#1C4587]">
+                            Softwares
+                        </span>
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -41,6 +52,8 @@ const Header: React.FC = () => {
                     {/* Desktop CTA */}
                     <Link
                         href={cta.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="hidden lg:inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 transition-all duration-200 ml-8"
                     >
                         {cta.label}
@@ -89,6 +102,8 @@ const Header: React.FC = () => {
                             <div className="border-t border-gray-200 pt-4">
                                 <Link
                                     href={cta.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     onClick={() => setIsOpen(false)}
                                     className="flex items-center w-full px-4 py-3 text-base font-medium text-white bg-gradient-to-r from-blue-500 to-blue-600 rounded-md shadow-lg hover:shadow-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-200"
                                 >
@@ -99,7 +114,7 @@ const Header: React.FC = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
-        </header>
+        </header >
     );
 };
 
