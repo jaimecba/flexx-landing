@@ -4,6 +4,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import authRouter from './routes/auth';
 import { initializeDatabase } from './config/database';
+import 'reflect-metadata';
 
 dotenv.config();
 
