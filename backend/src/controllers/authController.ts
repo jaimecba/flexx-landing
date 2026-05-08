@@ -1,4 +1,4 @@
-import { AppDataSource } from "../config/database";
+import { dataSource } from "../config/database";
 import { User } from "../entities/User";
 import * as bcrypt from "bcryptjs";
 import * as jwt from "jsonwebtoken";
@@ -6,7 +6,7 @@ import * as jwt from "jsonwebtoken";
 export class AuthController {
     static async register(email: string, password: string, name: string) {
         try {
-            const userRepository = AppDataSource.getRepository(User);
+            const userRepository = dataSource.getRepository(User);
             const existingUser = await userRepository.findOneBy({ email });
             if (existingUser) {
                 throw new Error("Email já está em uso.");
@@ -27,7 +27,7 @@ export class AuthController {
 
     static async login(email: string, password: string) {
         try {
-            const userRepository = AppDataSource.getRepository(User);
+            const userRepository = dataSource.getRepository(User);
             const user = await userRepository.findOneBy({ email });
             if (!user || !(await bcrypt.compare(password, user.password))) {
                 throw new Error("Email ou senha inválidos.");
