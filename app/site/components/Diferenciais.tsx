@@ -6,7 +6,7 @@ const diferenciais = [
     'Inovação constante',
     'Equipe experiente',
     'Soluções personalizadas',
-    'Suporte Humanizado',
+    'Suporte humanizado',
     'Qualidade garantida',
     'Preços competitivos',
 ];

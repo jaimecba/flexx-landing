@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
                     <div className="flex justify-center md:justify-start">
                         <Image
-                            src="/logo_sem_fundo.png"
+                            src="/images/logos/LOGO_HORIZONTAL2.png"
                             alt="Logo Flexx"
                             width={150}
                             height={50}
