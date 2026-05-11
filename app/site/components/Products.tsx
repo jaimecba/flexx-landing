@@ -16,6 +16,7 @@ const Products = () => {
                                 alt="Ícone Ponto Web"
                                 width={192}
                                 height={192}
+                                className="w-full h-full object-contain"
                             />
                         </div>
                         <h3 className="text-2xl font-bold mb-4 text-gray-900">Ponto Web</h3>
@@ -50,6 +51,7 @@ const Products = () => {
                                 alt="Ícone Secullum Acesso"
                                 width={192}
                                 height={192}
+                                className="w-full h-full object-contain"
                             />
                         </div>
                         <h3 className="text-2xl font-bold mb-4 text-gray-900">Secullum Acesso</h3>
@@ -83,28 +85,29 @@ const Products = () => {
                                 src="/icons/academia.png"
                                 alt="Ícone Secullum Academia"
                                 width={192}
-                                height={80}
+                                height={192}
+                                className="w-full h-full object-contain"
                             />
                         </div>
                         <h3 className="text-2xl font-bold mb-4 text-gray-900">Secullum Academia</h3>
                         <p className="text-gray-600 mb-8 leading-relaxed">Gestão completa para academias e clubes, controlando matrículas, acessos e finanças.</p>
                         <ul className="text-left mb-8 space-y-3">
                             <li className="flex items-center">
-                                <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
+                                <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
                                 Controle de matrículas e mensalidades
                             </li>
                             <li className="flex items-center">
-                                <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
+                                <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
                                 Agendamento de aulas e professores
                             </li>
                             <li className="flex items-center">
-                                <span className="w-2 h-2 bg-purple-600 rounded-full mr-3"></span>
+                                <span className="w-2 h-2 bg-orange-600 rounded-full mr-3"></span>
                                 Relatórios financeiros e de alunos
                             </li>
                         </ul>
                         <a
                             href="/produtos/secullum-academia"
-                            className="inline-block bg-purple-600 text-white px-8 py-3 rounded-xl hover:bg-purple-700 transition-colors duration-300 font-semibold"
+                            className="inline-block bg-orange-500 text-white px-8 py-3 rounded-xl hover:bg-orange-600 transition-colors duration-300 font-semibold"
                         >
                             Saiba Mais
                         </a>
