@@ -49,9 +49,51 @@ const Hero2: React.FC = () => {
                                 href={EXTERNAL_LINKS.pontoWebDemo}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-full sm:w-auto border-2 border-gray-200 text-gray-900 font-semibold py-5 px-8 rounded-2xl text-lg hover:bg-gray-50 transition text-center"
+                                className="
+        group
+        w-full sm:w-auto
+        flex items-center justify-center gap-3
+        border-2 border-blue-600
+        text-blue-700
+        font-semibold
+        py-5 px-8
+        rounded-2xl
+        text-lg
+        bg-white
+        shadow-md
+        hover:bg-blue-50
+        hover:shadow-xl
+        hover:-translate-y-1
+        transition-all duration-300
+    "
                             >
-                                Ver Demonstração Interativa
+                                {/* ÍCONE PLAY COM EFEITO DE PULSO */}
+                                <span className="relative flex items-center justify-center">
+                                    <span className="
+            absolute
+            w-9 h-9
+            rounded-full
+            bg-blue-400
+            opacity-30
+            animate-ping
+        "></span>
+
+                                    <span className="
+            relative
+            flex items-center justify-center
+            w-9 h-9
+            rounded-full
+            bg-blue-600
+            text-white
+            shadow-md
+            group-hover:scale-110
+            transition-transform duration-300
+        ">
+                                        ▶
+                                    </span>
+                                </span>
+
+                                <span>Ver Demonstração Interativa</span>
                             </a>
 
                         </div>
