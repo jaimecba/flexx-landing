@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { EXTERNAL_LINKS } from "../../config/links";
+
 
 const Hero2: React.FC = () => {
     return (
@@ -42,13 +44,14 @@ const Hero2: React.FC = () => {
                                 Testar grátis agora
                             </a>
 
-                            {/* BOTÃO SECUNDÁRIO */}
+                            {/* BOTÃO SECUNDÁRIO — DEMONSTRAÇÃO INTERATIVA */}
                             <a
-                                href="https://wa.me/556521294584?text=6"
+                                href={EXTERNAL_LINKS.pontoWebDemo}
+                                target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-full sm:w-auto border-2 border-gray-200 text-gray-900 font-semibold py-5 px-8 rounded-2xl text-lg hover:bg-gray-50 transition text-center"
                             >
-                                Ver demonstração
+                                Ver Demonstração Interativa
                             </a>
 
                         </div>
